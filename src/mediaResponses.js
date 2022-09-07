@@ -46,6 +46,8 @@ function getParty(request, response) {
     stream.on('error', (streamErr) => {
       response.end(streamErr);
     });
+
+    return stream;
   });
 }
 
